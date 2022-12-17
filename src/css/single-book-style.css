@@ -1,0 +1,65 @@
+.book-description-container{
+    position: relative;
+    padding:10px 40px 40px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 400px 50px;
+    grid-template-areas: "back back" "img description" "cart cart";
+    max-width: 800px;
+    height: 500px;
+    grid-area: main;
+}
+.in-cart{
+    position: absolute;
+    bottom: 90%;
+    left: 90%;
+}
+.book-description-container a{
+    grid-area: back;
+    
+}
+.book-description-container a button{
+    width: 50px;
+    height: 100%;
+    font-weight: bold;
+    font-size: 50px;
+    background: none;
+    border: none;
+    transition: all 0.2s;
+}
+.book-description-container a button:hover,
+.book-description-container a button:active{
+    font-size: 60px;
+}
+.book-image{grid-area: img;}
+.book-image img{
+    width: 90%;
+    max-width: 300px;
+    height: 90%;
+    margin: 5% auto;
+    box-shadow: -5px 5px 10px #000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.book-description {
+    grid-area: description;
+}
+
+.book-action button{
+    grid-area: cart;
+    width: 200%;
+    height: 100%;
+    background-color: var(--lighter);
+    color: white;
+    font-size: 30px;
+    transition: all 0.2s;
+    border: none;
+    border-radius: 10px;
+}
+.book-action button:hover{
+    transform: scale(1.02);
+    font-size: 27px;
+    box-shadow: 0 0 10px black inset;
+}

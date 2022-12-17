@@ -1,0 +1,98 @@
+.loader-container{
+    height: 100vh;
+}
+.main-item {
+    padding: 10px;
+    background-color: #fff;
+    width: 700px;
+  }
+  
+  .background-masker {
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  .btn-divide-left {
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 5%;
+  }
+  
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -800px 0
+    }
+    100% {
+      background-position: 800px 0
+    }
+  }
+  
+  .animated-background,
+  .book-loader,
+  .long-title-loader,
+  .title-loader,
+  .shorter-title-loader,
+  .shortest-title-loader,
+  .button-loader,
+  .pagination-loader {
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+    background-size: 100%;
+    height: 20px;
+    position: relative;
+  }
+  .long-title-loader{
+    width: 90%;
+    margin: 5px 0 5px 10px;
+  }
+  .title-loader{
+    width: 70%;
+    margin: 0 0 5px 10px;
+  }
+  .shorter-title-loader{
+    width: 50%;
+    height: 15px;
+    margin: 0 0 5px 10px;
+  }
+  .shortest-title-loader{
+    width: 30%;
+    height: 15px;
+    margin: 0 0 5px 10px;
+  }
+
+  .book-loader{
+    width: 160px;
+    height: 200px;
+    margin: 15px auto;
+    border-radius: 5px;
+  }
+  .button-loader{
+    width: 114px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  .pagination-loader{
+    width: 90%;
+    height: 35px;
+    margin: 5px 0;
+  }
+
+  
+  
+  .shared-dom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(207, 207, 207);
+  }
+  
+ 
+  
+  

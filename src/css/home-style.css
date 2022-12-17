@@ -1,0 +1,184 @@
+.weekly-books-container{
+    background-image:linear-gradient(rgba(208, 61, 16, 0.14), rgba(215, 104, 19, 0.718)), url('https://www.eficode.com/hubfs/images/blogs/Imported_Blog_Media/orange-book.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    min-height: 750px;
+    height: 90vh;
+    
+}
+
+.weekly-books-container .title {
+    margin-left: 10%;
+    margin-bottom: 15px;
+    color: white;
+    display: inline-block;
+}
+.weekly-books-container .mobile-title{display: none;}
+.weekly-books-container .search-box{
+    display: inline-block;
+    width: 600px;
+    padding: 1px 10px;
+    background-color: rgba(255, 153, 0, 0.24);
+    border-radius: 20px;
+    margin-left: 100px;
+    border: none;
+    color: rgb(220, 220, 220);
+
+}
+.weekly-books-container .search-box input::placeholder{color: rgb(204, 204, 204);}
+.weekly-books-container .search-box input{
+    display: inline-block;
+    background-color: transparent;
+    width: 95%;
+    font-size: 20px;
+    color: white;
+}
+.weekly-books-container .search-box a{
+    display: inline-block;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 0;
+    border: none;
+    width: 10px;
+}
+.weekly-books-container .search-box a button,
+.weekly-books-container .search-box a svg{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: orange;
+}
+.my-swiper{
+    
+    width: 80%;
+
+    border-right: 2px solid rgba(209, 140, 0, 0.033);
+    border-left: 2px solid rgba(206, 139, 4, 0.163);
+}
+
+.card{
+   max-width: 250px;
+}
+
+.card-container{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 0 10px black;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.card-description{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 260px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.412), rgba(0, 0, 0, 0.648));
+    transition: all 0.3s;
+    border-top-right-radius: 10px;
+}
+.card-description h1{
+    font-size: 19px;
+    color: white;
+    margin-top:90px ;
+}
+.card-description p{
+    font-size: 16px;
+    color: rgb(213, 213, 213);
+}
+.card-description h3{
+    color: var(--lighter);
+}
+
+.card-description:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.064));
+    color: transparent;
+}
+
+
+.check-out{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: orange;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    color: white;
+    transition: all 0.2s;
+}
+
+.check-out:hover{
+    background-color: var(--lighter);
+    font-size: 25px;
+}
+
+.hero{
+   
+    color: white;
+    position: relative;
+    padding-bottom: 100px;
+    height: 30%;
+    margin-top: 30px;
+}
+
+.hero-title{
+    padding: 20px 10%;
+   
+}
+.hero-title h1{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    word-spacing: 7px;
+    line-height: 50px;
+}
+.hero-title h2{
+    color: rgb(249, 249, 249);
+}
+
+.hero-library{
+    margin-left: 10%;
+}
+.hero-library h2 {
+    display: inline-block;
+}
+
+.hero-library .btn-explore{
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 13px;
+    background-image: linear-gradient(rgb(255, 166, 1), rgb(255, 123, 0));
+    text-transform: uppercase;
+    transition: all 0.2s;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.hero-library .btn-explore:hover{
+    background-image: linear-gradient(rgb(255, 123, 0),orange);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px orange;
+}
+.hero img{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    width: 350px;
+    height: 300px;
+}

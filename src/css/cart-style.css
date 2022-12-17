@@ -1,0 +1,121 @@
+.cart .sticky-nav{display: none;}
+
+.cart-container{
+    max-width: 600px;
+    width: 60%;
+    margin: 20px auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+.cart-item{
+    display: grid;
+    grid-template-columns: 130px 210px auto 100px;
+    grid-template-rows: 130px 50px;
+    grid-template-areas: "img description auto action" "img each auto price";  
+    border-bottom: 2px solid gray;
+    box-shadow: 0 3px 5px gray;
+    margin-bottom: 7px;
+    padding: 10px;
+}
+.cart-item img{
+    grid-area: img;
+    width: 120px;
+    height: 170px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: -5px 5px 10px #000;
+}
+.item-description{
+    grid-area: description;
+    
+}
+.item-description h1{
+    font-size: 19px;
+}
+.each{
+    grid-area: each;
+}
+.item-action{
+    grid-area: action;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-action p{
+    padding: 5px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4)  inset, 0 5px 10px rgba(0, 0, 0, 0.625) inset;
+}
+.item-action button{
+    border-radius: 100%;
+    padding: 5px;
+    width: 35px;
+    text-align: center;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    transition: all 0.2s;
+    border: none;
+    font-size: 20px;
+}
+.item-action button:hover{
+    background-color: rgb(255, 94, 0);
+    transform: scale(1.1);
+}
+.item-action button:active{
+    transform: scale(0.9);
+}
+.item-price{
+    grid-area: price;
+  
+}
+.item-price h2{
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    text-align: right;
+}
+.auto{grid-area: auto;}
+
+
+.order-info{
+    width: 100% - 0px;
+    margin-left: 130px;
+    box-shadow: 0 1px 0px black;
+    padding: 10px;
+    
+}
+.total{width: 100%;}
+.total p{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin: 0;
+}
+.total h3{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    margin: 0;
+}
+
+.checkout{
+    position: absolute;
+    color: white;
+    padding: 15px;
+    right: 0;
+    left: 130px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: orange;
+    border: 1px solid orange;
+    font-size: 25px;
+    transition: all 0.2s;
+}
+.checkout:hover{
+    background-color: rgb(222, 148, 0);
+    transform: scale(1.05);
+}
+.checkout:active{
+   
+    box-shadow: 0 0 10px black inset;
+}
