@@ -18,7 +18,7 @@ const CategoryNav = () => {
             <ul className="list-items">
                 <li key={'allCategoriesID'}><NavLink className={({isActive}) => isActive ? 'cat-link cat-active' : 'cat-link'} to={`../../page/${page}/all`} >All categories </NavLink> </li>
                 {myData.categories.map((category, index) => {
-                    return <li key={index}><NavLink className={({isActive}) => isActive ? 'cat-link cat-active' : 'cat-link'} to={`../../page/1/${category}`} >{category} </NavLink> </li>
+                    return <li key={index}><NavLink className={({isActive}) => isActive ? 'cat-link cat-active' : 'cat-link'} to={`../../page/${page}/${category}`} >{category} </NavLink> </li>
                 })}
             </ul>
         </nav>
