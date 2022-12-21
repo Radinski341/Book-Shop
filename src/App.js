@@ -17,7 +17,7 @@ function App() {
         <Route path='page/:pageID/:category' element={<BooksList />} /> 
         <Route path='page/:pageID/:category/book/:bookID' element={<SingleBook />} />
         <Route path='page/:pageID/:category/:searchQuery' element={<BooksList />} />
-        <Route path='read-me' element={<ReadMe />} />
+        <Route path='/read-me' element={<ReadMe />} />
         <Route path='cart' element={<Cart />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
